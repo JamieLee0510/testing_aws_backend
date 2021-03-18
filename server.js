@@ -15,6 +15,10 @@ app.get("/api/testing", (req, res) => {
   res.send({ message: "Nice to meet you babe" });
 });
 
+app.get("/", (req, res) => {
+  res.send("welcome to the home page babe");
+});
+
 app.listen(port, () => {
   console.log("server listen 3000");
 });
